@@ -1,0 +1,26 @@
+{
+  "name": "WedgeWheel",
+  "authors": [
+    "Todd Dukart <tdukart@aloftinteractive.com>"
+  ],
+  "main": "src/wedgewheel.js",
+  "description": "HTML5 Canvas-based spinning chance wheel",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests",
+    "demo"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "requirejs": "~2.1.18",
+    "chroma-js": "~0.8.0",
+    "duration.js": "~3.4.0",
+    "chance": "~0.7.5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "WedgeWheel",
+  "description": "HTML5 Canvas-based spinning chance wheel",
+  "main": "src/wedgewheel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Todd Dukart <tdukart@aloftinteractive.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-bower-requirejs": "^2.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

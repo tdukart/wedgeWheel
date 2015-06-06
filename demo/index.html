@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Spinner Test</title>
+
+  <style>
+    .spinner, .pointer {
+      position: absolute;
+      transition: 1s ease-out;
+    }
+
+    #controlButtons {
+      position: absolute;
+      top: 500px;
+    }
+  </style>
+  <script src="../src/bower_components/requirejs/require.js" data-main="demo.js"></script>
+</head>
+<body>
+<div id="spinnerParent"></div>
+<div id="controlButtons">
+  <button id="spinButton">Spin</button>
+  <button id="resetButton">Reset</button>
+</div>
+</body>
+</html>
