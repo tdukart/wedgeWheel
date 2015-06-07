@@ -18,14 +18,15 @@ module.exports = function(grunt) {
       ]
     },
     copy: {
-      libs: {
-        src: "src/bower_components/*",
-        dest: "dist/bower_components"
-      },
-      sourcecode: {
-        src: "src/wedgewheel.js",
-        dest: "dist/wedgewheel.js"
-      }
+      //Disabled for now. Travis doesn't seem to allow me to use subdirectories, so the "combined" file will have to do for the release.
+      //libs: {
+      //  src: "src/bower_components/*",
+      //  dest: "dist/bower_components"
+      //},
+      //sourcecode: {
+      //  src: "src/wedgewheel.js",
+      //  dest: "dist/wedgewheel.js"
+      //}
     },
     requirejs: {
       combine: {
@@ -45,8 +46,8 @@ module.exports = function(grunt) {
           preserveComments: 'some'
         },
         files: {
-          'dist/wedgewheel.combined.min.js': ['dist/wedgewheel.combined.js'],
-          'dist/wedgewheel.min.js': ['dist/wedgewheel.js']
+          'dist/wedgewheel.combined.min.js': ['dist/wedgewheel.combined.js']
+          //'dist/wedgewheel.min.js': ['dist/wedgewheel.js']
         }
       }
     }
@@ -61,7 +62,7 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
-  grunt.registerTask('common', ['requirejs', 'copy']);
+  grunt.registerTask('common', ['requirejs' /*,'copy'*/]);
 
   grunt.registerTask('prod', ['clean', 'common', 'uglify']);
 
