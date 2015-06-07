@@ -1,4 +1,5 @@
 # wedgeWheel
+[![Build Status](https://travis-ci.org/tdukart/wedgeWheel.svg?branch=master)](https://travis-ci.org/tdukart/wedgeWheel)
 HTML5 Canvas-based spinning chance wheel
 
 # Requirements
