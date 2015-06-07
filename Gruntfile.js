@@ -19,10 +19,12 @@ module.exports = function(grunt) {
     },
     copy: {
       libs: {
-        "dist/bower_components": "src/bower_components"
+        src: "src/bower_components/*",
+        dest: "dist/bower_components"
       },
-      src: {
-        "dist/wedgewheel.js": "src/wedgewheel.js"
+      sourcecode: {
+        src: "src/wedgewheel.js",
+        dest: "dist/wedgewheel.js"
       }
     },
     requirejs: {
@@ -43,6 +45,7 @@ module.exports = function(grunt) {
           preserveComments: 'some'
         },
         files: {
+          'dist/wedgewheel.combined.min.js': ['dist/wedgewheel.combined.js'],
           'dist/wedgewheel.min.js': ['dist/wedgewheel.js']
         }
       }
