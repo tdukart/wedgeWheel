@@ -1,5 +1,5 @@
 {
-  "name": "WedgeWheel",
+  "name": "wedgewheel",
   "description": "HTML5 Canvas-based spinning chance wheel",
   "main": "src/wedgewheel.js",
   "scripts": {
@@ -17,5 +17,14 @@
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1"
-  }
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdukart/wedgeWheel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tdukart/wedgeWheel/issues"
+  },
+  "homepage": "https://github.com/tdukart/wedgeWheel#readme"
 }
