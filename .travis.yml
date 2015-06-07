@@ -1,8 +1,8 @@
 language: node_js
 node_js:
 - '0.11'
-before_script:
-- npm install grunt -g
+before_install:
+- npm install grunt-cli -g
 script: grunt
 deploy:
   provider: releases
