@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '0.11'
+before_install:
+- npm install grunt-cli bower -g
+- bower install
+script: grunt
+deploy:
+  provider: releases
+  api_key:
+    secure: Rf2xO+20TByodt5DxaXindoFrzj+W42l/Sj7q6+vAcEes1wjuLiUQ6eziUnuf9Qm4CLZe3vipnq8HbXiKCEvkTjnPw5T51aL1pbkvpLVCoLcjw4zDkcxFntP7Vvu1V0JlzmjTZp77rPeRBBtRZEArn9qUPGC2Qgxr/Z2MiWrZQM=
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    repo: tdukart/wedgeWheel
+    tags: true
